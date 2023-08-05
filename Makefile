@@ -1,7 +1,7 @@
-CC = gcc
-CPPC = g++
-MPIC = mpicc
-MPIPPC = mpic++
+CC = mpicc-openmpi-gcc12
+CPPC = mpicxx-openmpi-gcc12
+MPIC = mpicc-openmpi-gcc12
+MPIPPC = mpicxx-openmpi-gcc12
 
 INCLUDES=-I./include -I./
 CCOMPILEARG =  -Wno-unused-function -O3 -funroll-loops $(INCLUDES) -std=gnu11
